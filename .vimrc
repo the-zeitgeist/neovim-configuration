@@ -22,6 +22,14 @@ Plug 'morhetz/gruvbox'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
+Plug 'valloric/youcompleteme'
+Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
+Plug 'mxw/vim-jsx'
+Plug 'terryma/vim-multiple-cursors'
+
 
 call plug#end()
 
@@ -29,6 +37,13 @@ call plug#end()
 " colorscheme gruvbox
 " let g:gruvbox_contrast_dark = "hard"
 let NERDTreeQuitOnOpen=1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
 
 let mapleader=" "
 
