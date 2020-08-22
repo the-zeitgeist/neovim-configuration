@@ -85,7 +85,7 @@ nmap <Leader>q :q<CR>
 nmap <Leader>fq :q!<CR>
 nmap <Leader>t :StripWhitespace<CR>
 nmap <Leader>b :CocCommand<CR>
-nmap <Leader>k :tabr<cr>
-nmap <Leader>j :tabl<cr>
-nmap <Leader>l :tabp<cr>
-nmap <Leader>h :tabn<cr>
+nmap <Leader>k :tabn<cr>
+nmap <Leader>j :tabp<cr>
+nmap <Leader>l :tabl<cr>
+nmap <Leader>h :tabr<cr>
