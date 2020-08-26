@@ -11,10 +11,10 @@ set relativenumber
 set laststatus=2
 set noshowmode
 set updatetime=100
-" set tabstop=4
-" set shiftwidth=2
-set tabstop=8
-set shiftwidth=4
+set tabstop=4
+set shiftwidth=2
+" set tabstop=8
+" set shiftwidth=4
 set softtabstop=0
 set expandtab
 set smarttab
@@ -37,6 +37,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/loremipsum'
 Plug 'APZelos/blamer.nvim'
+Plug 'pangloss/vim-javascript'    " JavaScript support
+Plug 'leafgarland/typescript-vim' " TypeScript syntax
+Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'prettier/vim-prettier', {
