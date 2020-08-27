@@ -1,7 +1,7 @@
 set number
 set mouse=a
 set numberwidth=1
-set clipboard=unnamed
+" set clipboard=unnamed
 syntax enable
 set showcmd
 set ruler
@@ -88,7 +88,9 @@ nmap <Leader>q :q<CR>
 nmap <Leader>fq :q!<CR>
 nmap <Leader>t :StripWhitespace<CR>
 nmap <Leader>b :CocCommand<CR>
-nmap <Leader>k :tabn<cr>
-nmap <Leader>j :tabp<cr>
-nmap <Leader>l :tabl<cr>
-nmap <Leader>h :tabr<cr>
+nmap <Leader>k :tabn<CR>
+nmap <Leader>j :tabp<CR>
+nmap <Leader>l :tabl<CR>
+nmap <Leader>h :tabr<CR>
+" split screen navigation short cut
+nmap <Leader>m <C-w>
