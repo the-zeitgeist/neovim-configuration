@@ -64,6 +64,9 @@ let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
+let g:vim_jsx_pretty_colorful_config = 1 "
+let g:vim_jsx_pretty_highlight_close_tag = 1
+let g:vim_jsx_pretty_template_tags = ['html', 'jsx', 'js']
 let g:NERDTreeGitStatusConcealBrackets = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'✹',
@@ -94,3 +97,5 @@ nmap <Leader>l :tabl<CR>
 nmap <Leader>h :tabr<CR>
 " split screen navigation short cut
 nmap <Leader>m <C-w>
+" Keybind for pairs with content
+nmap <Leader>, <M-e>
