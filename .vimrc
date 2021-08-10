@@ -28,6 +28,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'mg979/vim-visual-multi'
 Plug 'APZelos/blamer.nvim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 Plug 'vim-scripts/loremipsum'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
