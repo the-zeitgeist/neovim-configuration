@@ -12,6 +12,7 @@ set relativenumber
 set laststatus=2
 set noshowmode
 set updatetime=100
+" set guifont=Fira\ Code\ 11
 
 call plug#begin('~/.vim/plugged')
 
@@ -28,24 +29,28 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'mg979/vim-visual-multi'
 Plug 'APZelos/blamer.nvim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 Plug 'vim-scripts/loremipsum'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master'}
 
 " Testing stage
 Plug 'yuezk/vim-js'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'fatih/vim-go'
+Plug 'vim-scripts/Rainbow-Parenthesis'
 
 call plug#end()
 
 " Change leader key to space
 let mapleader=" "
 let NERDTreeQuitOnOpen=1
+let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinSize=40
 
 let g:blamer_enabled = 1
 let g:blamer_prefix = ' -> '
 let g:blamer_relative_time = 1
+let g:airline_powerline_fonts = 1
 
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
@@ -91,6 +96,7 @@ nmap <Leader>k :tabn<CR>
 nmap <Leader>j :tabp<CR>
 nmap <Leader>l :tabl<CR>
 nmap <Leader>h :tabr<CR>
+nmap <Leader>e <C-w>
 
 " Better whitespace
 nmap <Leader>t :StripWhitespace<CR>
