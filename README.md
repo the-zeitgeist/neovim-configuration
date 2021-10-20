@@ -1,12 +1,13 @@
-# Personal nvim configuration
+# Neovim configuration file
 
 This file contains personal neovim configuration that can also be used with VIM.
 
+## Plug in can be installed via curl:
+
 Puglins are installed via Plug
+[VIM Plug](https://github.com/junegunn/vim-plug)
 
-# Plug in can be installed via curl: [VIM Plug](https://github.com/junegunn/vim-plug)
-
-# Main key binding
+## Main key binding
 
   1. space + w   ---> :w save current file
   2. space + q   ---> :q quit current file
@@ -22,8 +23,8 @@ Puglins are installed via Plug
   13. space + k  ---> :tabn navigates to the right tab document
   14. space + l  ---> :tabr navigates to the last right tab document
   15. space + m  ---> Shortcut for <C-w> this allows navigation between splited windows
- 
- # Conquer of Completition extensions
+
+ ### Conquer of Completition extensions
 
  - coc-tabnine
  - coc-pairs
