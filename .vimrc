@@ -25,6 +25,7 @@ Plug 'chun-yang/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
+Plug 'rbong/vim-flog'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'mg979/vim-visual-multi'
 Plug 'APZelos/blamer.nvim'
@@ -96,7 +97,7 @@ nmap <Leader>k :tabn<CR>
 nmap <Leader>j :tabp<CR>
 nmap <Leader>l :tabl<CR>
 nmap <Leader>h :tabr<CR>
-nmap <Leader>e <C-w>
+nmap <Leader>m <C-w>
 
 " Better whitespace
 nmap <Leader>t :StripWhitespace<CR>
