@@ -1,10 +1,11 @@
-# Personal nvim configuration
+# Neovim configuration file
 
 This file contains personal neovim configuration that can also be used with VIM.
 
-Puglins are installed via Plug
+## Plug in can be installed via curl
 
-## Plug in can be installed via curl: [VIM Plug](https://github.com/junegunn/vim-plug)
+Puglins are installed via Plug
+[VIM Plug](https://github.com/junegunn/vim-plug)
 
 ## Main key binding
 
