@@ -32,6 +32,8 @@ Plug 'APZelos/blamer.nvim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/loremipsum'
 Plug 'neoclide/coc.nvim', {'branch': 'master'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
 
 " Testing stage
 Plug 'yuezk/vim-js'
@@ -104,3 +106,4 @@ nmap <Leader>t :StripWhitespace<CR>
 
 " Conquer of Completition
 nmap <Leader>b :CocCommand<CR>
+nmap <Leader>a :CocAction<CR>
