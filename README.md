@@ -7,6 +7,8 @@ This file contains personal neovim configuration that can also be used with VIM.
 Puglins are installed via Plug
 [VIM Plug](https://github.com/junegunn/vim-plug)
 
+In order to enable file search, install Rg (ripgrep)
+
 ## Main key binding
 
   1. space + w   ---> :w save current file
@@ -23,6 +25,8 @@ Puglins are installed via Plug
   12. space + k  ---> :tabn navigates to the right tab document
   13. space + l  ---> :tabr navigates to the last right tab document
   14. space + m  ---> Shortcut for <C-w> this allows navigation between splited windows
+  15. space + f  ---> :FZF finds a file by name
+  16. space + ff ---> :Rg looks for a word recursivelly inside the folder
 
 ## Conquer of Completition extensions
 

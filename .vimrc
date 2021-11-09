@@ -17,30 +17,26 @@ set updatetime=100
 call plug#begin('~/.vim/plugged')
 
 " IDE
+Plug 'APZelos/blamer.nvim'
+Plug 'airblade/vim-gitgutter'
+Plug 'chun-yang/auto-pairs'
 Plug 'easymotion/vim-easymotion'
+Plug 'fatih/vim-go'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'mg979/vim-visual-multi'
+Plug 'neoclide/coc.nvim', {'branch': 'master'}
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'rbong/vim-flog'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'chun-yang/auto-pairs'
-Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'rbong/vim-flog'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'mg979/vim-visual-multi'
-Plug 'APZelos/blamer.nvim'
+Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'vim-scripts/loremipsum'
-Plug 'neoclide/coc.nvim', {'branch': 'master'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-
 
 " Testing stage
-Plug 'yuezk/vim-js'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'fatih/vim-go'
-Plug 'vim-scripts/Rainbow-Parenthesis'
+Plug 'frazrepo/vim-rainbow'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
@@ -65,8 +61,7 @@ let g:NERDToggleCheckAllLines = 1
 
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
-
-let g:vim_jsx_pretty_colorful_config = 1
+let g:rainbow_active = 1
 
 let g:NERDTreeGitStatusConcealBrackets = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
@@ -90,6 +85,8 @@ nnoremap ,<space> :nohlsearch<CR>
 
 " Easy motion
 nmap <Leader>s <Plug>(easymotion-s2)
+nmap <leader>f :FZF --reverse<CR>
+nmap <leader>ff :Rg<CR>
 
 " Nerdtree
 nmap <Leader>nt :NERDTreeFind<CR>
