@@ -3,6 +3,7 @@ set mouse=a
 set numberwidth=1
 set clipboard=unnamedplus
 syntax enable
+syntax on
 set showcmd
 set ruler
 set encoding=utf-8
@@ -22,20 +23,22 @@ Plug 'airblade/vim-gitgutter'
 Plug 'chun-yang/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 Plug 'fatih/vim-go'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mg979/vim-visual-multi'
 Plug 'neoclide/coc.nvim', {'branch': 'master'}
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'rbong/vim-flog'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Testing stage
-Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
 
 call plug#end()
@@ -50,6 +53,14 @@ let g:blamer_enabled = 1
 let g:blamer_prefix = ' -> '
 let g:blamer_relative_time = 1
 let g:airline_powerline_fonts = 1
+
+let g:typescript_conceal_function             = "ƒ"
+let g:typescript_conceal_null                 = "ø"
+let g:typescript_conceal_undefined            = "¿"
+let g:typescript_conceal_this                 = "@"
+let g:typescript_conceal_return               = "⇚"
+let g:typescript_conceal_prototype            = "¶"
+let g:typescript_conceal_super                = "Ω"
 
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
