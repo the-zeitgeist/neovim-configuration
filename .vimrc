@@ -13,6 +13,8 @@ set relativenumber
 set laststatus=2
 set noshowmode
 set updatetime=100
+set splitbelow
+set splitright
 " set guifont=Fira\ Code\ 11
 
 call plug#begin('~/.vim/plugged')
@@ -72,6 +74,7 @@ let g:NERDToggleCheckAllLines = 1
 
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+let g:EasyMotion_smartcase = 1
 let g:rainbow_active = 1
 
 let g:NERDTreeGitStatusConcealBrackets = 1
@@ -95,7 +98,7 @@ nmap <Leader>fq :q!<CR>
 nnoremap ,<space> :nohlsearch<CR>
 
 " Easy motion
-nmap <Leader>s <Plug>(easymotion-s2)
+nmap <Leader>m <Plug>(easymotion-s2)
 nmap <leader>f :FZF --reverse<CR>
 nmap <leader>ff :Rg<CR>
 
@@ -107,7 +110,14 @@ nmap <Leader>k :tabn<CR>
 nmap <Leader>j :tabp<CR>
 nmap <Leader>l :tabl<CR>
 nmap <Leader>h :tabr<CR>
-nmap <Leader>m <C-w>
+
+nmap <Leader>s <C-w>
+
+" Resize
+nmap <Leader>< 10<C-w><<CR>
+nmap <Leader>> 10<C-w>><CR>
+nmap <Leader>+ 10<C-w>+<CR>
+nmap <Leader>- 10<C-w>-<CR>
 
 " Better whitespace
 nmap <Leader>t :StripWhitespace<CR>
@@ -115,3 +125,4 @@ nmap <Leader>t :StripWhitespace<CR>
 " Conquer of Completition
 nmap <Leader>b :CocCommand<CR>
 nmap <Leader>a :CocAction<CR>
+
