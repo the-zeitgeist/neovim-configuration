@@ -46,10 +46,10 @@ Plug 'tpope/vim-surround'
 call plug#end()
 
 " Change leader key to space
-let mapleader=" "
-let NERDTreeQuitOnOpen=1
+let mapleader = " "
+let NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
-let g:NERDTreeWinSize=40
+let g:NERDTreeWinSize = 40
 
 let g:blamer_enabled = 1
 let g:blamer_prefix = ' -> '
@@ -72,8 +72,8 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
-let g:better_whitespace_enabled=1
-let g:strip_whitespace_on_save=1
+let g:better_whitespace_enabled = 1
+let g:strip_whitespace_on_save = 1
 let g:EasyMotion_smartcase = 1
 let g:rainbow_active = 1
 
@@ -90,6 +90,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'✔︎',
                 \ 'Unknown'   :'?',
                 \ }
+let NERDTreeShowHidden = 1
 
 " MAPS
 nmap <Leader>w :w<CR>
@@ -111,7 +112,7 @@ nmap <Leader>j :tabp<CR>
 nmap <Leader>l :tabl<CR>
 nmap <Leader>h :tabr<CR>
 
-nmap <Leader>s <C-w>
+nmap <Leader>e <C-w>
 
 " Resize
 nmap <Leader>< 10<C-w><<CR>
