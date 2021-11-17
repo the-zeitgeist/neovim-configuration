@@ -15,6 +15,7 @@ set noshowmode
 set updatetime=100
 set splitbelow
 set splitright
+set conceallevel=1
 " set guifont=Fira\ Code\ 11
 
 call plug#begin('~/.vim/plugged')
@@ -36,6 +37,7 @@ Plug 'rbong/vim-flog'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -50,6 +52,9 @@ let mapleader = " "
 let NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize = 40
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
 
 let g:blamer_enabled = 1
 let g:blamer_prefix = ' -> '
