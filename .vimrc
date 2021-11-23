@@ -15,7 +15,7 @@ set noshowmode
 set updatetime=100
 set splitbelow
 set splitright
-set conceallevel=1
+" set conceallevel=1
 " set guifont=Fira\ Code\ 11
 
 call plug#begin('~/.vim/plugged')
