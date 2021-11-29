@@ -29,6 +29,7 @@ Plug 'fatih/vim-go'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'machakann/vim-highlightedyank'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mg979/vim-visual-multi'
 Plug 'neoclide/coc.nvim', {'branch': 'master'}
@@ -81,6 +82,8 @@ let g:better_whitespace_enabled = 1
 let g:strip_whitespace_on_save = 1
 let g:EasyMotion_smartcase = 1
 let g:rainbow_active = 1
+
+let g:highlightedyank_highlight_duration = 500
 
 let g:NERDTreeGitStatusConcealBrackets = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {

@@ -7,6 +7,8 @@ This file contains personal neovim configuration that can also be used with VIM.
 Puglins are installed via Plug
 [VIM Plug](https://github.com/junegunn/vim-plug)
 
+An installation file is in progress and will be added before 2022
+
 In order to enable file search, install Rg (ripgrep)
 
 ## Main key binding
