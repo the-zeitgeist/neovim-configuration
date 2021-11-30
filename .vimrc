@@ -29,6 +29,7 @@ Plug 'fatih/vim-go'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mg979/vim-visual-multi'
@@ -81,7 +82,8 @@ let g:NERDToggleCheckAllLines = 1
 let g:better_whitespace_enabled = 1
 let g:strip_whitespace_on_save = 1
 let g:EasyMotion_smartcase = 1
-let g:rainbow_active = 1
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 let g:highlightedyank_highlight_duration = 500
 
@@ -89,8 +91,8 @@ let g:NERDTreeGitStatusConcealBrackets = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'✹',
                 \ 'Staged'    :'✚',
-                \ 'Untracked' :'✭',
-                \ 'Renamed'   :'➜',
+                \ 'Untracked' :'➜',
+                \ 'Renamed'   :'✭',
                 \ 'Unmerged'  :'═',
                 \ 'Deleted'   :'✖',
                 \ 'Dirty'     :'✗',
@@ -99,6 +101,8 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 let NERDTreeShowHidden = 1
+
+au VimEnter * RainbowParentheses
 
 " MAPS
 nmap <Leader>w :w<CR>
