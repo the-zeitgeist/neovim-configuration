@@ -84,6 +84,7 @@ let g:strip_whitespace_on_save = 1
 let g:EasyMotion_smartcase = 1
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
+let g:rainbow#blacklist = [16, 232, 233, 234, 235, 236]
 
 let g:highlightedyank_highlight_duration = 500
 
@@ -112,6 +113,8 @@ nnoremap ,<space> :nohlsearch<CR>
 
 " Easy motion
 nmap <Leader>m <Plug>(easymotion-s2)
+
+" Search
 nmap <leader>f :FZF --reverse<CR>
 nmap <leader>ff :Rg<CR>
 
@@ -139,3 +142,5 @@ nmap <Leader>t :StripWhitespace<CR>
 nmap <Leader>b :CocCommand<CR>
 nmap <Leader>a :CocAction<CR>
 
+" Tabs
+nmap <C-t> :tabnew<CR>
