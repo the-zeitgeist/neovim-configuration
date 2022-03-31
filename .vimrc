@@ -15,8 +15,8 @@ set noshowmode
 set updatetime=100
 set splitbelow
 set splitright
-" set conceallevel=1
-" set guifont=Fira\ Code\ 11
+" https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Medium/complete/Fira%20Code%20Medium%20Nerd%20Font%20Complete.ttf
+set guifont=FiraCode\ Nerd\ Font\ 11
 
 call plug#begin('~/.vim/plugged')
 
@@ -33,9 +33,11 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mg979/vim-visual-multi'
+Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'master'}
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'rbong/vim-flog'
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
