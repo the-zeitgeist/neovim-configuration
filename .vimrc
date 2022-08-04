@@ -34,7 +34,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mg979/vim-visual-multi'
 Plug 'mhinz/vim-startify'
-Plug 'neoclide/coc.nvim', {'branch': 'master'}
+Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'rbong/vim-flog'
 Plug 'ryanoasis/vim-devicons'
@@ -45,6 +45,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'the-zeitgeist/static-headers.nvim'
 
 " Testing stage
 Plug 'tpope/vim-surround'
@@ -65,14 +66,7 @@ let g:blamer_prefix = ' -> '
 let g:blamer_relative_time = 1
 let g:airline_powerline_fonts = 1
 
-let g:typescript_conceal_function             = "ƒ"
-let g:typescript_conceal_null                 = "ø"
-let g:typescript_conceal_undefined            = "¿"
-let g:typescript_conceal_this                 = "@"
-let g:typescript_conceal_return               = "⇚"
-let g:typescript_conceal_prototype            = "¶"
-let g:typescript_conceal_super                = "Ω"
-
+let g:coc_disable_startup_warning = 1
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
@@ -92,10 +86,10 @@ let g:highlightedyank_highlight_duration = 500
 
 let g:NERDTreeGitStatusConcealBrackets = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-                \ 'Modified'  :'✹',
-                \ 'Staged'    :'✚',
+                \ 'Modified'  :'❭',
+                \ 'Staged'    :'⟫',
                 \ 'Untracked' :'➜',
-                \ 'Renamed'   :'✭',
+                \ 'Renamed'   :'⟆',
                 \ 'Unmerged'  :'═',
                 \ 'Deleted'   :'✖',
                 \ 'Dirty'     :'✗',
