@@ -2,6 +2,15 @@
 
 This file contains personal neovim configuration that can also be used with VIM.
 
+## Installation
+
+If you're running vim for the first time, is recommended to use the installation script,
+In case you have a previous configuration you will have to copy the .vimrc manually and then running the installation script
+
+```sh
+  ./install.sh
+```
+
 ## Plug in can be installed via curl
 
 Puglins are installed via Plug
