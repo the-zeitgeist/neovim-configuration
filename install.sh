@@ -34,6 +34,11 @@ if [ -z "$node" ]; then
 	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 	nvm install --lts
+fi
+
+yarn=$(command -v yarn)
+
+if [ -z "$yarn" ]; then
 	npm i -g yarn
 fi
 
