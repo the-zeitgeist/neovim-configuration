@@ -15,7 +15,7 @@ conf=$(ls -a ~/. | grep .vimrc)
 if [ -z "$conf" ]; then
 	echo 'creating symbolic link to vimrc'
 	mkdir -p ~/.vim ~/.vim/autoload ~/.vim/plugged ~/.config/nvim
-	echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after \let &packpath = &runtimepath \source ~/.vimrc' > ~/.config/nvim/init.vim
+	echo -e 'set runtimepath^=~/.vim runtimepath+=~/.vim/after\nlet &packpath = &runtimepath\nsource ~/.vimrc' > ~/.config/nvim/init.vim
 	ln -s .vimrc ~/
 fi
 
