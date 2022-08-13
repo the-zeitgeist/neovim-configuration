@@ -10,6 +10,13 @@ if [ -z "$bin" ]; then
 	exit 1
 fi
 
+distro=$(cat /etc/lsb-release | head -1)
+
+if [[ "$distro" != *"Ubuntu"* ]]; then
+	echo "Currently this script only supports Ubuntu"
+	exit 2
+fi
+
 conf=$(ls -a ~/. | grep .vimrc)
 
 if [ -z "$conf" ]; then
