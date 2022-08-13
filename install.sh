@@ -18,7 +18,7 @@ if [ -z "$conf" ]; then
 	echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after
 	let &packpath = &runtimepath
 	source ~/.vimrc' >> ~/.config/nvim/init.vim
-	ln -s .vimrc ~/
+	ln -s ./.vimrc ~/.vimrc
 fi
 
 rg=$(command -v rg)
