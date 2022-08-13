@@ -4,7 +4,6 @@
 # If you already have a .vimrc file working, you need to copy this file manually
 
 bin=$(command -v nvim || command -v vim)
-echo $bin
 
 if [ -z "$bin" ]; then
 	echo 'vim is not installed'
@@ -18,6 +17,13 @@ if [ -z "$conf" ]; then
 	mkdir -p ~/.vim ~/.vim/autoload ~/.vim/plugged ~/.config/nvim
 	echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after \let &packpath = &runtimepath \source ~/.vimrc' > ~/.config/nvim/init.vim
 	ln -s .vimrc ~/
+fi
+
+rg=$(command -v rg)
+
+if [ -z "$rg" ]; then
+	echo 'installing search folder engine'
+	sudo apt-get install ripgrep
 fi
 
 echo 'installing vim plug'

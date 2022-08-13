@@ -28,23 +28,21 @@ In order to enable file search, install Rg (ripgrep)
   13. space + j  ---> :tabp navigates to left tab document
   14. space + k  ---> :tabn navigates to the right tab document
   15. space + l  ---> :tabr navigates to the last right tab document
-  16. space + s  ---> Shortcut for <C-w> this allows navigation between splited windows
+  16. space + e [ h | j | k | l ]  ---> Shortcut for <C-w> this allows navigation between splited windows
   17. space + f  ---> :FZF finds a file by name
   18. space + ff ---> :Rg looks for a word recursivelly inside the folder
 
 ## Conquer of Completition extensions
 
-- coc-tabnine
-- coc-pairs
-- coc-lists
-- coc-html
-- coc-git
 - coc-eslint
-- coc-yaml
-- coc-tslint
-- coc-sh
-- coc-rome
-- coc-python
-- coc-json
+- coc-git
 - coc-go
-- coc-css
+- coc-java
+- coc-jest
+- coc-json
+- coc-pairs
+- coc-prettier
+- coc-python
+- coc-sh
+- coc-tslint
+- coc-yaml
