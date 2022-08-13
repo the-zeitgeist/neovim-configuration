@@ -16,9 +16,25 @@ if [ -z "$conf" ]; then
 	echo 'creating symbolic link to vimrc'
 	mkdir -p ~/.vim ~/.vim/autoload ~/.vim/plugged ~/.config/nvim
 	echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after
-	let &packpath = &runtimepath
-	source ~/.vimrc' >> ~/.config/nvim/init.vim
-	ln -s ./.vimrc ~/.vimrc
+let &packpath = &runtimepath
+source ~/.vimrc' >> ~/.config/nvim/init.vim
+	ln -s $(pwd)/.vimrc ~/.vimrc
+fi
+
+curl=$(command -v curl)
+
+if [ -z "$curl" ]; then
+	sudo apt install curl
+fi
+
+node=$(command -v node)
+
+if [ -z "$node" ]; then
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+	export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+	nvm install --lts
+	npm i -g yarn
 fi
 
 rg=$(command -v rg)
