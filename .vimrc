@@ -136,7 +136,6 @@ nmap <Leader>t :StripWhitespace<CR>
 
 " Conquer of Completition
 nmap <Leader>b :CocCommand<CR>
-nmap <Leader>a :CocAction<CR>
 
 " Tabs
 nmap <C-t> :tabnew<CR>
