@@ -5,6 +5,8 @@ set clipboard=unnamedplus
 syntax enable
 syntax on
 set showcmd
+set foldmethod=indent
+set nofoldenable
 set ruler
 set encoding=utf-8
 set showmatch
