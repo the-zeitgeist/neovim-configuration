@@ -47,7 +47,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'usernamehw/vscode-error-lens'
+Plug 'phindle/error-lens'
 " Plug 'the-zeitgeist/static-headers.nvim'
 
 " Testing stage
