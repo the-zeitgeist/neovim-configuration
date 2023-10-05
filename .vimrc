@@ -5,6 +5,8 @@ set clipboard=unnamedplus
 syntax enable
 syntax on
 set showcmd
+set foldmethod=indent
+set nofoldenable
 set ruler
 set encoding=utf-8
 set showmatch
@@ -137,7 +139,6 @@ nmap <Leader>t :StripWhitespace<CR>
 
 " Conquer of Completition
 nmap <Leader>b :CocCommand<CR>
-nmap <Leader>a :CocAction<CR>
 
 " Tabs
 nmap <C-t> :tabnew<CR>
